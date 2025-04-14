@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO - YOUR NAME</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">YOUR NAME</div>
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+      <p>SHOWCASING MY WORK AS A JUNIOR SOFTWARE DEVELOPER</p>
+    </div>
+  </header>
+  <main>
+    <section id="about" class="section">
+      <h2>ABOUT ME</h2>
+      <p>BRIEF BIO: YOUR BIO ABOUT EDUCATION, PASSION, AND EXPERIENCE.</p>
+    </section>
+    <section id="projects" class="section">
+      <h2>PROJECTS</h2>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <h3>PROJECT 1 TITLE</h3>
+        <p>SHORT DESCRIPTION OF PROJECT 1.</p>
+        <div class="project-details hidden">
+          <p>DETAILED INFORMATION ABOUT PROJECT 1. TECHNOLOGIES USED, FEATURES, ETC.</p>
+        </div>
+        <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">READ MORE</button>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <h3>PROJECT 2 TITLE</h3>
+        <p>SHORT DESCRIPTION OF PROJECT 2.</p>
+        <div class="project-details hidden">
+          <p>DETAILED INFORMATION ABOUT PROJECT 2. TECHNOLOGIES USED, FEATURES, ETC.</p>
+        </div>
+        <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">READ MORE</button>
+      </div>
+      <!-- ADD MORE PROJECT DIVS AS NEEDED -->
+    </section>
+    <section id="skills" class="section">
+      <h2>SKILLS</h2>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>FRAMEWORK 1: YOUR FRAMEWORK</li>
+        <li>FRAMEWORK 2: YOUR FRAMEWORK</li>
+        <!-- ADD MORE SKILLS AS NEEDED -->
+      </ul>
+    </section>
+    <section id="contact" class="section">
+      <h2>CONTACT ME</h2>
+      <form id="contact-form">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" placeholder="YOUR NAME">
+        
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" placeholder="YOUR EMAIL">
+        
+        <label for="message">MESSAGE</label>
+        <textarea id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
+        
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 YOUR NAME. ALL RIGHTS RESERVED.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
