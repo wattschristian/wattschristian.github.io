@@ -68,13 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Demo contact form submission handling
-  const contactForm = document.getElementById('contact-form');
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('FORM SUBMITTED: THIS IS A DEMO. PLEASE ADD YOUR FORM HANDLER.');
-  });
-});
+
 
 // Toggle project details on card click
 function toggleProjectDetails(projectCard) {
@@ -93,13 +87,12 @@ function sendMail() {
   window.location.href = link;
 }
 
-function sendEmail() {
-  $('#emailSubmit').click(function(){
-    $(location).attr('href', 'mailto:wattschristian50@gmail.com'
-                             + "?subject="
-                             + encodeURIComponent($('#name').value())
-                             + "&body=" 
-                             + encodeURIComponent($('#message').value())
-    );
+$('#emailSubmit').click(function(){
+  $(location).attr('href', 'mailto:wattschristian50@gmail.com'
+                            + "?subject="
+                            + encodeURIComponent($('#name').value())
+                            + "&body=" 
+                            + encodeURIComponent($('#message').value())
+  );
 });
-}
+
