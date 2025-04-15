@@ -81,3 +81,25 @@ function toggleProjectDetails(projectCard) {
   const details = projectCard.querySelector('.project-details');
   details.classList.toggle('hidden');
 }
+
+
+function sendMail() {
+  var link = "mailto:me@example.com"
+           + "?cc=myCCaddress@example.com"
+           + "&subject=" + encodeURIComponent("This is my subject")
+           + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+  ;
+  
+  window.location.href = link;
+}
+
+function sendEmail() {
+  $('#emailSubmit').click(function(){
+    $(location).attr('href', 'mailto:wattschristian50@gmail.com'
+                             + "?subject="
+                             + encodeURIComponent($('#name').value())
+                             + "&body=" 
+                             + encodeURIComponent($('#message').value())
+    );
+});
+}
