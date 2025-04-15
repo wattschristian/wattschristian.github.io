@@ -68,14 +68,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Demo contact form submission handling
+
+  // NOTE: Form does not work, debug later
+  // contact form submission handling
   const contactForm = document.getElementById('contact-form');
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    var link = "mailto:me@example.com"
-           + "?cc=myCCaddress@example.com"
-           + "&subject=" + encodeURIComponent("This is my subject")
-           + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+    var sender = $('#email').value();
+    var message = $('#message').value();
+    var link = "mailto:wattschristian50@gmail.com"
+           +  `?cc=${sender}`
+           + "&subject=" + encodeURIComponent("Portfolio website contact")
+           + "&body=" + encodeURIComponent(message)
   ;
   
   window.location.href = link;
