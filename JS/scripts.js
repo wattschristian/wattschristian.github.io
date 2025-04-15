@@ -71,20 +71,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // NOTE: Form does not work, debug later
   // contact form submission handling
-  const contactForm = document.getElementById('contact-form');
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var sender = $('#email').value;
-    var message = $('#message').value;
-    var link = "mailto:wattschristian50@gmail.com"
-           +  `?cc=${sender}`
-           + "&subject=" + encodeURIComponent("Portfolio Website Contact")
-           + "&body=" + encodeURIComponent(message)
-  ;
-  
-  window.location.href = link;
+  $(document).ready(function () {
+      const contactForm = document.getElementById('contact-form');
+      contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var message = $('#message').value;
+      var link = "mailto:wattschristian50@gmail.com"
+            + "?subject=" + encodeURIComponent("Portfolio Website Contact")
+            + "&body=" + encodeURIComponent(message);
+    
+      window.location.href = link;
+    });
   });
-});
 
 // Toggle project details on card click
 function toggleProjectDetails(projectCard) {
