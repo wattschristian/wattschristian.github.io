@@ -68,31 +68,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-
-
-// Toggle project details on card click
-function toggleProjectDetails(projectCard) {
-  const details = projectCard.querySelector('.project-details');
-  details.classList.toggle('hidden');
-}
-
-
-function sendMail() {
-  var link = "mailto:me@example.com"
+  // Demo contact form submission handling
+  const contactForm = document.getElementById('contact-form');
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var link = "mailto:me@example.com"
            + "?cc=myCCaddress@example.com"
            + "&subject=" + encodeURIComponent("This is my subject")
            + "&body=" + encodeURIComponent(document.getElementById('myText').value)
   ;
   
   window.location.href = link;
-}
-
-$('#emailSubmit').click(function(){
-  $(location).attr('href', 'mailto:wattschristian50@gmail.com'
-                            + "?subject="
-                            + encodeURIComponent($('#name').value())
-                            + "&body=" 
-                            + encodeURIComponent($('#message').value())
-  );
+  });
 });
 
+// Toggle project details on card click
+function toggleProjectDetails(projectCard) {
+  const details = projectCard.querySelector('.project-details');
+  details.classList.toggle('hidden');
+}
