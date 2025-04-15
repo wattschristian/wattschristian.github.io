@@ -74,11 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    var sender = $('#email').value();
-    var message = $('#message').value();
+    var sender = $('#email').value;
+    var message = $('#message').value;
     var link = "mailto:wattschristian50@gmail.com"
            +  `?cc=${sender}`
-           + "&subject=" + encodeURIComponent("Portfolio website contact")
+           + "&subject=" + encodeURIComponent("Portfolio Website Contact")
            + "&body=" + encodeURIComponent(message)
   ;
   
