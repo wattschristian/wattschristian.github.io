@@ -68,18 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // // contact form submission handling
-  // const contactForm = document.getElementById('contact-form');
-  // contactForm.addEventListener('submit', function(e) {
-  //   e.preventDefault();
-  //   var message = $('#message').val();
-  //   var link = "mailto:wattschristian50@gmail.com"
-  //          + "?subject=" + encodeURIComponent("Portfolio Website Contact")
-  //          + "&body=" + encodeURIComponent(message);
-  
-  //   window.location.href = link;
-  // });
-
 });
 
 // Toggle project details on card click
