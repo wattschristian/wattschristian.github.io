@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PORTFOLIO – YOUR NAME</title>
+  <title>PORTFOLIO - CHRISTIAN WATTS</title>
   <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
-  <!-- Fixed Top Navigation -->
+  <!-- Fixed Navigation Header -->
   <header>
     <nav class="navbar">
-      <div class="logo">YOUR NAME</div>
+      <div class="logo">CHRISTIAN WATTS</div>
       <ul class="nav-links">
         <li><a href="#intro">INTRO</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -25,93 +25,130 @@
       </div>
     </nav>
   </header>
-  
-  <!-- Introduction Section (Two Columns) -->
+
+  <!-- Introduction Section (Two-Column Layout) -->
   <section id="intro" class="intro">
     <div class="intro-container">
       <div class="intro-text">
-        <h1>HI, I'M YOUR NAME</h1>
-        <p>I DESIGN AND DEVELOP INNOVATIVE SOFTWARE SOLUTIONS TO BRING IDEAS TO LIFE.</p>
-        <a href="#projects" class="btn">VIEW MY WORK</a>
+        <h1>Hi, I’m Christian Watts</h1>
+        <p>
+          I’m a software developer with focus on backend and full‑stack development.
+          I'm passionate about building efficient solutions for real world problems and providing
+          impactful user experiences.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
       </div>
       <div class="intro-image">
-        <img src="YOUR_IMAGE_URL" alt="YOUR NAME" />
+        <img src="YOUR_IMAGE_URL" alt="Christian Watts" />
       </div>
     </div>
   </section>
-  
+
   <!-- About Section -->
   <section id="about" class="section about">
     <div class="container">
-      <h2>ABOUT ME</h2>
-      <p>YOUR BIO: INSERT A BRIEF DESCRIPTION OF YOUR PASSION, EDUCATION, AND EXPERIENCE.</p>
+      <h2>About Me</h2>
+      <p> I’m a recent Computer Science graduate from the University of Missouri – Columbia with a deep interest in how technology can solve real-world problems. That curiosity has led me to continually learn, build, and collaborate — both in and out of the classroom.
+          <br><br>
+          During my time at university I built a strong foundation in programming, logical thinking, and problem solving, but it was during my internships that the concepts I've learned really came to life. At Gainwell Technologies, I worked 
+          on production-ready solutions using C#, SQL, JavaScript, and other technologies, building upon existing systems to streamline internal processes and improve efficiency. Whether I was developing UI widgets for real-time event monitoring or automating email notifications for 
+          data requests, each project taught me something new and pushed me to grow. 
+          <br><br>
+          Outside of work, I enjoy experimenting with new ideas and collaborating with peers. One of my favorite personal projects was learning to build an e-commerce clothing web application from scratch using ASP.NET, which helped sharpen 
+          my full-stack development and database skills. Another highlight was my Capstone project where my team and I designed and built a 3D-printed robot capable of recreating designs in sand, powered by a Swift mobile app.
+          I see every project as an opportunity to grow, make connections, and make an impact. I enjoy being part of a team, learning from those around me, and contributing my own perspective to build meaningful solutions. Whether I’m working on scalable systems or exploring new frameworks, 
+          I bring a mix of curiosity, focus, and energy to the table. 
+          <br><br>
+          When I’m not coding, you’ll probably find me reading up on emerging tech, practicing martial arts, or spending time outdoors. I’m excited about where this journey is headed and am always open to new opportunities to learn and contribute.
+          <br><br>
+          <b>Let’s build something great together.</b>
+
+
+      </p>
     </div>
   </section>
-  
+
   <!-- Projects Section -->
   <section id="projects" class="section projects">
     <div class="container">
-      <h2>MY PROJECTS</h2>
+      <h2>My Projects</h2>
       <div class="projects-grid">
+        <!-- Project 1 -->
         <div class="project-card" onclick="toggleProjectDetails(this)">
-          <h3>PROJECT 1 TITLE</h3>
-          <p>SHORT DESCRIPTION OF PROJECT 1.</p>
+          <h3>e-Commerce Clothing Website</h3>
+          <p>
+            A full‑stack ASP.NET website for an online clothing store.
+          </p>
           <div class="project-details hidden">
-            <p>DETAILED INFORMATION ABOUT PROJECT 1: TECHNOLOGIES USED, FEATURES, ETC.</p>
+            <p>
+              Developed using C#, HTML, CSS, JavaScript, and SQL Server. This project showcases my ability to create secure user experiences and manage database integrations in a robust production environment.
+            </p>
           </div>
-          <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">EXPLORE</button>
+          <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">View</button>
         </div>
+        <!-- Project 2 -->
         <div class="project-card" onclick="toggleProjectDetails(this)">
-          <h3>PROJECT 2 TITLE</h3>
-          <p>SHORT DESCRIPTION OF PROJECT 2.</p>
+          <h3>3D Printed Robot Drawing App</h3>
+          <p>
+            A creative capstone project blending hardware with software.
+          </p>
           <div class="project-details hidden">
-            <p>DETAILED INFORMATION ABOUT PROJECT 2: TECHNOLOGIES USED, FEATURES, ETC.</p>
+            <p>
+              Using Raspberry Pi, stepper motors, Swift, and Python, I developed an app that controls a 3D printed robot to recreate drawings. This project reflects my enthusiasm for merging physical computing with modern mobile interfaces.
+            </p>
           </div>
-          <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">EXPLORE</button>
+          <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">View</button>
         </div>
-        <!-- ADD MORE PROJECT CARDS AS NEEDED -->
       </div>
     </div>
   </section>
-  
+
   <!-- Skills Section -->
   <section id="skills" class="section skills">
     <div class="container">
-      <h2>MY SKILLS</h2>
+      <h2>My Skills</h2>
       <ul class="skills-list">
-        <li>HTML/CSS</li>
-        <li>JAVASCRIPT</li>
-        <li>FRAMEWORK 1: YOUR FRAMEWORK</li>
-        <li>FRAMEWORK 2: YOUR FRAMEWORK</li>
-        <!-- ADD MORE SKILLS AS NEEDED -->
+        <li><strong>Backend:</strong> C, C++, C#, Python, Java, Express, Node.js</li>
+        <li><strong>Frontend:</strong> Angular, ReactJS, JavaScript, jQuery, TypeScript, HTML, CSS</li>
+        <li><strong>Database:</strong> Oracle, SQL Server, MongoDB</li>
+        <li><strong>Misc:</strong> SSRS Forms, Azure DevOps, Visual Studio</li>
+        <li><strong>Soft Skills:</strong> Results-oriented, Team player, Passion for learning</li>
       </ul>
     </div>
   </section>
-  
+
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <div class="container">
-      <h2>CONTACT ME</h2>
+      <h2>Contact Me</h2>
       <form id="contact-form">
-        <label for="name">NAME</label>
-        <input type="text" id="name" name="name" placeholder="YOUR NAME" />
-  
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email" placeholder="YOUR EMAIL" />
-  
-        <label for="message">MESSAGE</label>
-        <textarea id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
-  
-        <button type="submit">SEND MESSAGE</button>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="How can I help you?"></textarea>
+
+        <button type="submit">Send Message</button>
       </form>
+      <p>
+        Or reach me directly at <a href="mailto:wattschristian50@gmail.com">wattschristian50@gmail.com</a>.
+      </p>
+      <p>
+        Connect with me on 
+        <a href="https://www.linkedin.com/in/christian-watts-4006b1241/" target="_blank">LinkedIn</a> or check out my projects on 
+        <a href="https://github.com/wattschristian" target="_blank">GitHub</a>.
+      </p>
     </div>
   </section>
-  
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 YOUR NAME. ALL RIGHTS RESERVED.</p>
+    <p>&copy; 2025 Christian Watts. All Rights Reserved.</p>
   </footer>
-  
+
   <script src="JS/scripts.js"></script>
 </body>
 </html>

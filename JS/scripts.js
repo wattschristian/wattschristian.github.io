@@ -48,9 +48,22 @@ document.addEventListener('DOMContentLoaded', () => {
         smoothScrollTo(targetY, 300);
       }
       
-      // Close the mobile menu if open
-      if (navLinks.classList.contains('active')) {
-        navLinks.classList.remove('active');
+      
+    });
+  });
+
+  // Smooth scrolling for buttons
+  document.querySelectorAll('.btn').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetID = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetID);
+      
+      if (targetSection) {
+        // Offset to accommodate fixed navbar (adjust as needed)
+        const targetY = targetSection.offsetTop - 60;
+        // Animate scroll over 300 milliseconds
+        smoothScrollTo(targetY, 300);
       }
     });
   });
