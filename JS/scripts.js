@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    var message = $('#message').value;
+    var message = $('#message').val();
     var link = "mailto:wattschristian50@gmail.com"
            + "?subject=" + encodeURIComponent("Portfolio Website Contact")
            + "&body=" + encodeURIComponent(message);
