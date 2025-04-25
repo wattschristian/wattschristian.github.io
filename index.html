@@ -4,18 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PORTFOLIO - CHRISTIAN WATTS</title>
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="CSS/styles.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
   <!-- Fixed Navigation Header -->
-  <header>
+  <header data-aos="fade-down">
     <nav class="navbar">
       <div class="logo">CHRISTIAN WATTS</div>
       <ul class="nav-links">
         <li><a href="#intro">INTRO</a></li>
         <li><a href="#about">ABOUT</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
         <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#demos">DEMOS</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -27,26 +33,40 @@
     </nav>
   </header>
 
-  <!-- Introduction Section (Two-Column Layout) -->
-  <section id="intro" class="intro">
+  <!-- Introduction Section -->
+  <section id="intro" class="intro" data-aos="fade-up">
     <div class="intro-container">
-      <div class="intro-text">
+      <div class="intro-text" data-aos="fade-right">
         <h1>Hi, I’m Christian Watts</h1>
         <p>
           I’m a software developer with a focus on backend and full‑stack development.
           I love building efficient solutions for real world problems and providing
           impactful user experiences.
         </p>
+        <a href="Software_Resume.pdf" download class="btn">Download Résumé</a>
         <a href="#projects" class="btn">View My Work</a>
       </div>
-      <div class="intro-image">
+      <div class="intro-image" data-aos="fade-left">
         <img src="YOUR_IMAGE_URL" alt="Headshot Pending" />
       </div>
     </div>
   </section>
 
+  <!-- GitHub Stats Section -->
+  <section id="github-stats" class="section github-stats" data-aos="fade-up">
+    <div class="container">
+      <h2>GitHub Stats</h2>
+      <div class="stats-grid">
+        <div class="stat"><i class="fab fa-github"></i><span id="repo-count">0</span> Repos</div>
+        <div class="stat"><i class="fas fa-star"></i><span id="star-count">0</span> Stars</div>
+        <div class="stat"><i class="fas fa-code-branch"></i><span id="fork-count">0</span> Forks</div>
+        <div class="stat"><i class="fas fa-user-friends"></i><span id="follower-count">0</span> Followers</div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
-  <section id="about" class="section about">
+  <section id="about" class="section about" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
       <p> I’m a recent Computer Science graduate from the University of Missouri – Columbia with a deep interest in how technology can solve real-world problems. That curiosity has led me to continually learn, build, and collaborate — both in and out of the classroom.
@@ -63,55 +83,69 @@
           When I’m not coding, you’ll probably find me reading up on emerging tech, practicing martial arts, or spending time outdoors. I’m excited about where this journey is headed and am always open to new opportunities to learn and contribute.
           <br><br>
           <b>Let’s build something great together.</b>
-
-
       </p>
     </div>
   </section>
 
+  <!-- Experience & Education Timeline -->
+  <section id="experience" class="section experience" data-aos="fade-up">
+    <div class="container">
+      <h2>Experience & Education</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <h3>May 2025</h3>
+            <p>Bachelor of Science, Computer Science<br>University of Missouri – Columbia</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <h3>May 2021 – Aug 2021</h3>
+            <p>C#/.NET Developer Intern, Gainwell Technologies</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <h3>May 2022 – Aug 2022</h3>
+            <p>C#/.NET Developer Intern, Gainwell Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
-  <section id="projects" class="section projects">
+  <section id="projects" class="section projects" data-aos="fade-up">
     <div class="container">
       <h2>My Projects</h2>
       <div class="projects-grid">
         <!-- Project 1 -->
-        <div class="project-card" onclick="toggleProjectDetails(this)">
+        <div class="project-card" data-aos="zoom-in" onclick="toggleProjectDetails(this)">
           <h3>e-Commerce Clothing Website</h3>
-          <p>
-            A full‑stack ASP.NET website for an online clothing store.
-          </p>
+          <p>A full‑stack ASP.NET website for an online clothing store.</p>
           <div class="project-details hidden">
-            <p>
-              Developed using C#, HTML, CSS, JavaScript, and SQL Server. This project showcases my ability to create secure user experiences and manage database integrations in a robust production environment.
-            </p>
+            <p>Developed using C#, HTML, CSS, JavaScript, and SQL Server. This project showcases my ability to create secure user experiences and manage database integrations in a robust production environment.</p>
           </div>
           <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">View</button>
         </div>
         <!-- Project 2 -->
-        <div class="project-card" onclick="toggleProjectDetails(this)">
+        <div class="project-card" data-aos="zoom-in" onclick="toggleProjectDetails(this)">
           <h3>3D Printed Robot Drawing App</h3>
-          <p>
-            A creative capstone project blending hardware with software.
-          </p>
+          <p>A creative capstone project blending hardware with software.</p>
           <div class="project-details hidden">
-            <p>
-              Using a Raspberry Pi, stepper motors, Swift, and Python, my team and I developed an app that controled a 3D printed 
-              robot to recreate simple patterns in a bed of sand. This project reflects my enthusiasm for learning to integrate different technologies 
-              and challenge myself with things I've never worked with before
-            </p>
+            <p>Using a Raspberry Pi, stepper motors, Swift, and Python, my team and I developed an app that controlled a 3D printed robot to recreate simple patterns in a bed of sand. This project reflects my enthusiasm for learning to integrate different technologies and challenge myself with things I've never worked with before.</p>
           </div>
           <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">View</button>
         </div>
-        <div class="project-card" onclick="toggleProjectDetails(this)">
+        <!-- Project 3 -->
+        <div class="project-card" data-aos="zoom-in" onclick="toggleProjectDetails(this)">
           <h3>RISC-V Architecture Assembly Simulator</h3>
-          <p>
-            A simulator for the 5 stage pipelined RISC-V architecture
-          </p>
+          <p>A simulator for the 5 stage pipelined RISC-V architecture.</p>
           <div class="project-details hidden">
-            <p>
-              Written in C, this project was a series of labs that gradually increased the capabilities of the simulator as we learned each aspect of its functionality.
-              At the end, the simulator implemented the 5 stage pipeline, supported data hazard detection and data forwarding, and handled control hazards.
-            </p>
+            <p>Written in C, this project was a series of labs that gradually increased the capabilities of the simulator as we learned each aspect of its functionality. At the end, the simulator implemented the 5 stage pipeline, supported data hazard detection and data forwarding, and handled control hazards.</p>
           </div>
           <button class="toggle-btn" onclick="event.stopPropagation(); toggleProjectDetails(this.parentElement)">View</button>
         </div>
@@ -119,22 +153,54 @@
     </div>
   </section>
 
+  <!-- Interactive Demos Section -->
+  <section id="demos" class="section demos" data-aos="fade-up">
+    <div class="container">
+      <h2>Interactive Demos</h2>
+      <div class="demo-grid">
+        <div class="demo-item" data-aos="zoom-in">
+          <h3>Lottery Probability Tool</h3>
+          <iframe src="https://codesandbox.io/embed/lottery-probability-tool?fontsize=14&hidenavigation=1" title="Lottery Probability Tool" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div class="demo-item" data-aos="zoom-in">
+          <h3>ASP.NET E-Commerce Demo</h3>
+          <iframe src="https://codesandbox.io/embed/aspnet-ecommerce-demo?fontsize=14" title="ASP.NET E-Commerce Demo" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Skills Section -->
-  <section id="skills" class="section skills">
+  <section id="skills" class="section skills" data-aos="fade-up">
     <div class="container">
       <h2>My Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Backend:</strong> C, C++, C#, Python, Java, Express, Node.js</li>
-        <li><strong>Frontend:</strong> Angular, ReactJS, JavaScript, jQuery, TypeScript, HTML, CSS</li>
-        <li><strong>Database:</strong> Oracle, SQL Server, MongoDB</li>
-        <li><strong>Misc:</strong> SSRS Forms, Azure DevOps, Visual Studio</li>
-        <li><strong>Soft Skills:</strong> Results-oriented, Team player, Passion for learning</li>
-      </ul>
+      <div class="skill-bars">
+        <div class="skill-bar" data-aos="fade-right">
+          <i class="fas fa-server"></i><span class="skill-name">Backend (C#, Java, Python)</span>
+          <div class="bar"><div class="filled" data-percentage="90%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right">
+          <i class="fas fa-code"></i><span class="skill-name">Frontend (React, Angular)</span>
+          <div class="bar"><div class="filled" data-percentage="85%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right">
+          <i class="fas fa-database"></i><span class="skill-name">Database (SQL, MongoDB)</span>
+          <div class="bar"><div class="filled" data-percentage="80%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right">
+          <i class="fas fa-tools"></i><span class="skill-name">DevOps & Tools</span>
+          <div class="bar"><div class="filled" data-percentage="75%"></div></div>
+        </div>
+        <div class="skill-bar" data-aos="fade-right">
+          <i class="fas fa-lightbulb"></i><span class="skill-name">Soft Skills</span>
+          <div class="bar"><div class="filled" data-percentage="95%"></div></div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section contact" data-aos="fade-up">
     <div class="container">
       <h2>Contact Me</h2>
       <form id="contact-form" class="gform" method="POST" action="https://script.google.com/macros/s/AKfycby8pwAdHc09UuTgvYdgoHYzi_4F0upaLJmWox7H1U3V8QN3laWIetdxBBpjmfU5i0kB/exec">
@@ -162,10 +228,12 @@
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Christian Watts. All Rights Reserved.</p>
   </footer>
 
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="JS/scripts.js"></script>
   <script data-cfasync="false" type="text/javascript" src="JS/form-submission-handler.js"></script>
 </body>
