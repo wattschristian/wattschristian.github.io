@@ -1,18 +1,15 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PORTFOLIO - CHRISTIAN WATTS</title>
-  <!-- AOS Animation CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="CSS/styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <!-- Fixed Navigation Header (always visible) -->
+  <!-- Fixed Navigation Header -->
   <header>
     <nav class="navbar">
       <div class="logo">CHRISTIAN WATTS</div>
@@ -25,68 +22,76 @@
         <li><a href="#contact">CONTACT</a></li>
       </ul>
       <div class="menu-toggle">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   </header>
 
-  <!-- Introduction -->
-  <section id="intro" class="intro" data-aos="fade-up">
+  <!-- Introduction Section (Two-Column Layout) -->
+  <section id="intro" class="intro">
     <div class="intro-container">
-      <div class="intro-text" data-aos="fade-right">
+      <div class="intro-text">
         <h1>Hi, I’m Christian Watts</h1>
-        <p>Software developer specializing in backend & full-stack solutions.</p>
-        <a href="/Software_Resume.pdf" download class="btn">Download Résumé</a>
+        <p>
+          I’m a software developer with a focus on backend and full-stack development.
+          I love building efficient solutions for real world problems and providing
+          impactful user experiences.
+        </p>
+        <!-- Download Résumé button -->
+        <a href="Software_Resume.pdf" download class="btn">Download Résumé</a>
         <a href="#projects" class="btn">View My Work</a>
       </div>
-      <div class="intro-image" data-aos="fade-left">
+      <div class="intro-image">
         <img src="YOUR_IMAGE_URL" alt="Headshot Pending" />
       </div>
     </div>
   </section>
 
-  <!-- GitHub Stats -->
-  <section id="github-stats" class="section github-stats" data-aos="fade-up">
-    <div class="container">
-      <h2>GitHub Stats</h2>
-      <div class="stats-grid">
-        <div class="stat"><i class="fab fa-github"></i><span id="repo-count">0</span> Repos</div>
-        <div class="stat"><i class="fas fa-star"></i><span id="star-count">0</span> Stars</div>
-        <div class="stat"><i class="fas fa-code-branch"></i><span id="fork-count">0</span> Forks</div>
-        <div class="stat"><i class="fas fa-user-friends"></i><span id="follower-count">0</span> Followers</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section about" data-aos="fade-up">
+  <!-- About Section -->
+  <section id="about" class="section about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Recent CS graduate from Mizzou. Hands-on with C#, Python, Java, Node.js, React, Angular. Passionate about building scalable, user-centric applications.</p>
+      <p> I’m a recent Computer Science graduate from the University of Missouri – Columbia with a deep interest in how technology can solve real-world problems. That curiosity has led me to continually learn, build, and collaborate — both in and out of the classroom.
+        <br><br>
+        During my time at university I built a strong foundation in programming, logical thinking, and problem solving, but it was during my internships that the concepts I've learned really came to life. At Gainwell Technologies, I worked 
+        on production-ready solutions using C#, SQL, JavaScript, and other technologies, building upon existing systems to streamline internal processes and improve efficiency. Whether I was developing UI widgets for real-time event monitoring or automating email notifications for 
+        data requests, each project taught me something new and pushed me to grow. 
+        <br><br>
+        Outside of work, I enjoy experimenting with new ideas and collaborating with peers. One of my favorite personal projects was learning to build an e-commerce clothing web application from scratch using ASP.NET, which helped sharpen 
+        my full-stack development and database skills. Another highlight was my Capstone project where my team and I designed and built a 3D-printed robot capable of recreating designs in sand, powered by a Swift mobile app.
+        I see every project as an opportunity to grow, make connections, and make an impact. I enjoy being part of a team, learning from those around me, and contributing my own perspective to build meaningful solutions. Whether I’m working on scalable systems or exploring new frameworks, 
+        I bring a mix of curiosity, focus, and energy to the table. 
+        <br><br>
+        When I’m not coding, you’ll probably find me reading up on emerging tech, practicing martial arts, or spending time outdoors. I’m excited about where this journey is headed and am always open to new opportunities to learn and contribute.
+        <br><br>
+        <b>Let’s build something great together.</b>
+      </p>
     </div>
   </section>
 
-  <!-- Timeline -->
-  <section id="experience" class="section experience" data-aos="fade-up">
+  <!-- Experience Timeline -->
+  <section id="experience" class="section experience">
     <div class="container">
       <h2>Experience & Education</h2>
       <div class="timeline">
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-item">
+          <div class="timeline-icon">🎓</div>
           <div class="timeline-content">
             <h3>May 2025</h3>
-            <p>B.Sc. in Computer Science<br>University of Missouri – Columbia</p>
+            <p>B.Sc. in Computer Science, University of Missouri – Columbia</p>
           </div>
         </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="timeline-item">
+          <div class="timeline-icon">💼</div>
           <div class="timeline-content">
             <h3>May–Aug 2021</h3>
             <p>C#/.NET Developer Intern, Gainwell Technologies</p>
           </div>
         </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="timeline-item">
+          <div class="timeline-icon">💼</div>
           <div class="timeline-content">
             <h3>May–Aug 2022</h3>
             <p>C#/.NET Developer Intern, Gainwell Technologies</p>
@@ -96,53 +101,35 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section projects" data-aos="fade-up">
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
     <div class="container">
       <h2>My Projects</h2>
       <div class="projects-grid">
-        <!-- 1 -->
+        <!-- Project 1 -->
         <div class="project-card">
           <h3>e-Commerce Clothing Website</h3>
-          <p>Full-stack ASP.NET retail platform.</p>
+          <p>A full-stack ASP.NET website for an online clothing store.</p>
           <div class="project-details hidden">
-            <p>C#, HTML/CSS, JS & SQL Server—secure user flows & robust database integration.</p>
+            <p>Developed using C#, HTML, CSS, JavaScript, and SQL Server. Showcases secure user flows and robust DB integration.</p>
           </div>
           <button class="toggle-btn">View</button>
         </div>
-        <!-- 2 -->
+        <!-- Project 2 -->
         <div class="project-card">
           <h3>3D Printed Robot Drawing App</h3>
-          <p>Capstone blending hardware & software.</p>
+          <p>A creative capstone project blending hardware with software.</p>
           <div class="project-details hidden">
-            <p>Raspberry Pi + stepper motors + Swift/Python → sand-drawing robot.</p>
+            <p>Raspberry Pi + stepper motors + Swift/Python → sand-drawing robot control app.</p>
           </div>
           <button class="toggle-btn">View</button>
         </div>
-        <!-- 3 -->
+        <!-- Project 3 -->
         <div class="project-card">
-          <h3>RISC-V Assembly Simulator</h3>
-          <p>5-stage pipeline in C.</p>
+          <h3>RISC-V Architecture Assembly Simulator</h3>
+          <p>A simulator for the 5-stage pipelined RISC-V architecture.</p>
           <div class="project-details hidden">
-            <p>Data/control hazard handling, forwarding & stalls across labs.</p>
-          </div>
-          <button class="toggle-btn">View</button>
-        </div>
-        <!-- 4 -->
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>My own animated dev portfolio.</p>
-          <div class="project-details hidden">
-            <p>AOS scroll reveals, live GitHub stats, skill bars & timeline.</p>
-          </div>
-          <button class="toggle-btn">View</button>
-        </div>
-        <!-- 5 -->
-        <div class="project-card">
-          <h3>Hacker News Sorter</h3>
-          <p>Playwright script for HN.</p>
-          <div class="project-details hidden">
-            <p>Validates that the newest 100 articles are correctly sorted by timestamp.</p>
+            <p>Written in C across labs: data forwarding, hazard detection, control stalls.</p>
           </div>
           <button class="toggle-btn">View</button>
         </div>
@@ -150,46 +137,60 @@
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section skills" data-aos="fade-up">
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
     <div class="container">
       <h2>My Skills</h2>
       <ul class="skills-list">
-        <li><i class="fas fa-code"></i>Languages: C, C++, C#, Python, Java</li>
-        <li><i class="fas fa-server"></i>Frameworks: ASP.NET, Node.js, Express</li>
-        <li><i class="fas fa-database"></i>Databases: SQL Server, Oracle, MongoDB</li>
-        <li><i class="fas fa-tools"></i>Tools: Azure DevOps, Git, Playwright</li>
-        <li><i class="fas fa-project-diagram"></i>Workflow: Agile/Scrum, CI/CD</li>
-        <li><i class="fas fa-users"></i>Soft Skills: Teamwork, Communication</li>
+        <li><strong>Backend:</strong> C, C++, C#, Python, Java, Express, Node.js</li>
+        <li><strong>Frontend:</strong> Angular, ReactJS, JavaScript, jQuery, TypeScript, HTML, CSS</li>
+        <li><strong>Database:</strong> Oracle, SQL Server, MongoDB</li>
+        <li><strong>Misc:</strong> SSRS Forms, Azure DevOps, Visual Studio</li>
+        <li><strong>Soft Skills:</strong> Results-oriented, Team player, Passion for learning</li>
       </ul>
+      <!-- Skill proficiency bars -->
+      <div class="skill-bars">
+        <div class="skill-bar"><span>Backend</span><div class="fill" data-percentage="80%"></div></div>
+        <div class="skill-bar"><span>Frontend</span><div class="fill" data-percentage="75%"></div></div>
+        <div class="skill-bar"><span>Database</span><div class="fill" data-percentage="70%"></div></div>
+        <div class="skill-bar"><span>DevOps & Testing</span><div class="fill" data-percentage="65%"></div></div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact" data-aos="fade-up">
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form" class="gform" method="POST"
-            action="https://script.google.com/macros/s/…/exec">
-        <label>Name</label>
-        <input type="text" name="name" placeholder="Your Name" />
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Your Email" />
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <button type="submit">Send Message</button>
+      <form id="contact-form" class="gform" method="POST" action="https://script.google.com/macros/s/AKfycby8pwAdHc09UuTgvYdgoHYzi_4F0upaLJmWox7H1U3V8QN3laWIetdxBBpjmfU5i0kB/exec">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button id="emailSubmit" type="submit">Send Message</button>
+        <div style="display:none" class="thankyou_message">
+          <h3>Thanks for contacting me! I will get back to you soon!</h3>
+        </div>
       </form>
-      <p>Connect on <a href="https://linkedin.com/in/christian-watts" target="_blank">LinkedIn</a> or <a href="https://github.com/wattschristian" target="_blank">GitHub</a>.</p>
+      <p>
+        Connect with me on 
+        <a href="https://www.linkedin.com/in/christian-watts-4006b1241/" target="_blank">LinkedIn</a> or check out my projects on 
+        <a href="https://github.com/wattschristian" target="_blank">GitHub</a>.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer data-aos="fade-up">
+  <footer>
     <p>&copy; 2025 Christian Watts. All Rights Reserved.</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="JS/scripts.js"></script>
-  <script src="JS/form-submission-handler.js"></script>
+  <script data-cfasync="false" src="JS/form-submission-handler.js"></script>
 </body>
 </html>
