@@ -1,5 +1,10 @@
 /* styles.css - Dark IDE Style Theme (Black, Gray, and White) */
 
+/* Ensure content isn't hidden behind fixed header */
+html {
+  scroll-padding-top: 70px;
+}
+
 /* Color Variables */
 :root {
   --bg: #000000;
@@ -175,6 +180,7 @@ body {
 /* Common Section Styling */
 .section {
   padding: 4rem 1rem;
+  scroll-margin-top: 70px;
 }
 
 .container {
